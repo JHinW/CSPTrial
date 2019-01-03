@@ -42,9 +42,9 @@ namespace CSP.Client.Auth
             {
                 Headers = {
                     { HttpRequestHeader.Accept.ToString(), "application/json" },
-                    { "MS-RequestId", Guid.NewGuid().ToString() },
-                    { "MS-CorrelationId", Guid.NewGuid().ToString() },
-                    { "MS-Contract-Version", "v1" },
+                    //{ "MS-RequestId", Guid.NewGuid().ToString() },
+                    //{ "MS-CorrelationId", Guid.NewGuid().ToString() },
+                    //{ "MS-Contract-Version", "v1" },
                 }
             };
 
@@ -118,6 +118,28 @@ namespace CSP.Client.Auth
             return json;
         }
 
+
+        public async Task<string> TestUsage()
+        {
+
+            var id = "8a6b62ad-01cb-4d60-88a8-87a6490371d5";
+            var request = new HttpRequestMessage(HttpMethod.Get, $"v1/analytics/licenses/usage")
+            {
+                Headers = {
+                    { HttpRequestHeader.Accept.ToString(), "application/json" },
+                    { "MS-RequestId", Guid.NewGuid().ToString() },
+                    { "MS-CorrelationId", Guid.NewGuid().ToString() },
+                    { "MS-Contract-Version", "v1" },
+                }
+            };
+
+
+            var response = await _api.SendAsync(request);
+
+            var json = await response.Content.ReadAsStringAsync();
+            return json;
+        }
+
         public async Task<string> TestPartnerUsage()
         {
 
@@ -174,6 +196,29 @@ namespace CSP.Client.Auth
                     { "MS-RequestId", Guid.NewGuid().ToString() },
                     { "MS-CorrelationId", Guid.NewGuid().ToString() },
                     { "MS-Contract-Version", "v1" },
+                }
+            };
+
+
+            var response = await _api.SendAsync(request);
+
+            var json = await response.Content.ReadAsStringAsync();
+            return json;
+        }
+
+
+        public async Task<string> GetAllSearchAnalytics()
+        {
+
+            var id = "8a6b62ad-01cb-4d60-88a8-87a6490371d5";
+            var request = new HttpRequestMessage(HttpMethod.Get, $"partner/v1/analytics/search?top=100")
+            {
+                Headers = {
+                    { HttpRequestHeader.Accept.ToString(), "application/json" },
+                    { HttpRequestHeader.ContentType.ToString(), "application/json"},
+                    //{ "MS-CorrelationId", Guid.NewGuid().ToString() },
+                    //{ "MS-Contract-Version", "v1" },
+                    //{ "MS-RequestId", Guid.NewGuid().ToString()}
                 }
             };
 

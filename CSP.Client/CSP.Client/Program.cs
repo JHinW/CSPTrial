@@ -32,12 +32,18 @@ namespace CSP.Client
                 var json = await client.TestDeployment();
                 Console.WriteLine(json);
 
-                var dep = await client.TestCommercialDeployment();
-                Console.WriteLine(dep);
+                var usage1 = await client.TestUsage();
+                Console.WriteLine(usage1);
 
 
-                var usage = await client.TestCommercialUsage();
-                Console.WriteLine(usage);
+                var search = await client.GetAllSearchAnalytics();
+                Console.WriteLine(search);
+                //var dep = await client.TestCommercialDeployment();
+                //Console.WriteLine(dep);
+
+
+                //var usage = await client.TestCommercialUsage();
+                //Console.WriteLine(usage);
             }).Wait();
             Console.WriteLine("Hello World!");
         }
