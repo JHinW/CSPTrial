@@ -13,11 +13,14 @@ namespace CSP.Client.Statics
     /// </summary>
     public class CSPConfig
     {
+        /// <summary>
+        /// please set your application setting here
+        /// </summary>
         public static string PartnerServiceApiRoot = "https://partner.partnercenterapi.microsoftonline.cn";
         public static string Authority = "https://login.chinacloudapi.cn";
         public static string ResourceUrl = "https://graph.chinacloudapi.cn";
         public static string ApplicationId = "b091199c-ced2-495a-b982-291dd455a191";
-        public static string ApplicationSecret = "FNBjkP3Gz+j3KWSV+OMoENjVdhrMt1XBeV08h5mnBDc=";
-        public static string ApplicationDomain = "a3267ba8-bb7b-49ed-9343-760eebbfb58c";
+        public static string ApplicationSecret = "";
+        public static string ApplicationDomain = "";
     }
 }
