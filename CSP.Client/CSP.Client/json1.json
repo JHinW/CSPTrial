@@ -1,0 +1,206 @@
+{
+  "name": "string",
+  "type": "Microsoft.Web/sites",
+  "apiVersion": "2016-08-01",
+  "kind": "string",
+  "location": "string",
+  "tags": {},
+  "properties": {
+    "enabled": "boolean",
+    "hostNameSslStates": [
+      {
+        "name": "string",
+        "sslState": "string",
+        "virtualIP": "string",
+        "thumbprint": "string",
+        "toUpdate": "boolean",
+        "hostType": "string"
+      }
+    ],
+    "serverFarmId": "string",
+    "reserved": "boolean",
+    "siteConfig": {
+      "numberOfWorkers": "integer",
+      "defaultDocuments": [
+        "string"
+      ],
+      "netFrameworkVersion": "string",
+      "phpVersion": "string",
+      "pythonVersion": "string",
+      "nodeVersion": "string",
+      "linuxFxVersion": "string",
+      "requestTracingEnabled": "boolean",
+      "requestTracingExpirationTime": "string",
+      "remoteDebuggingEnabled": "boolean",
+      "remoteDebuggingVersion": "string",
+      "httpLoggingEnabled": "boolean",
+      "logsDirectorySizeLimit": "integer",
+      "detailedErrorLoggingEnabled": "boolean",
+      "publishingUsername": "string",
+      "appSettings": [
+        {
+          "name": "string",
+          "value": "string"
+        }
+      ],
+      "connectionStrings": [
+        {
+          "name": "string",
+          "connectionString": "string",
+          "type": "string"
+        }
+      ],
+      "handlerMappings": [
+        {
+          "extension": "string",
+          "scriptProcessor": "string",
+          "arguments": "string"
+        }
+      ],
+      "documentRoot": "string",
+      "scmType": "string",
+      "use32BitWorkerProcess": "boolean",
+      "webSocketsEnabled": "boolean",
+      "alwaysOn": "boolean",
+      "javaVersion": "string",
+      "javaContainer": "string",
+      "javaContainerVersion": "string",
+      "appCommandLine": "string",
+      "managedPipelineMode": "string",
+      "virtualApplications": [
+        {
+          "virtualPath": "string",
+          "physicalPath": "string",
+          "preloadEnabled": "boolean",
+          "virtualDirectories": [
+            {
+              "virtualPath": "string",
+              "physicalPath": "string"
+            }
+          ]
+        }
+      ],
+      "loadBalancing": "string",
+      "experiments": {
+        "rampUpRules": [
+          {
+            "actionHostName": "string",
+            "reroutePercentage": "number",
+            "changeStep": "number",
+            "changeIntervalInMinutes": "integer",
+            "minReroutePercentage": "number",
+            "maxReroutePercentage": "number",
+            "changeDecisionCallbackUrl": "string",
+            "name": "string"
+          }
+        ]
+      },
+      "limits": {
+        "maxPercentageCpu": "number",
+        "maxMemoryInMb": "integer",
+        "maxDiskSizeInMb": "integer"
+      },
+      "autoHealEnabled": "boolean",
+      "autoHealRules": {
+        "triggers": {
+          "requests": {
+            "count": "integer",
+            "timeInterval": "string"
+          },
+          "privateBytesInKB": "integer",
+          "statusCodes": [
+            {
+              "status": "integer",
+              "subStatus": "integer",
+              "win32Status": "integer",
+              "count": "integer",
+              "timeInterval": "string"
+            }
+          ],
+          "slowRequests": {
+            "timeTaken": "string",
+            "count": "integer",
+            "timeInterval": "string"
+          }
+        },
+        "actions": {
+          "actionType": "string",
+          "customAction": {
+            "exe": "string",
+            "parameters": "string"
+          },
+          "minProcessExecutionTime": "string"
+        }
+      },
+      "tracingOptions": "string",
+      "vnetName": "string",
+      "cors": {
+        "allowedOrigins": [
+          "string"
+        ]
+      },
+      "push": {
+        "kind": "string",
+        "properties": {
+          "isPushEnabled": "boolean",
+          "tagWhitelistJson": "string",
+          "tagsRequiringAuth": "string",
+          "dynamicTagsJson": "string"
+        }
+      },
+      "apiDefinition": {
+        "url": "string"
+      },
+      "autoSwapSlotName": "string",
+      "localMySqlEnabled": "boolean",
+      "ipSecurityRestrictions": [
+        {
+          "ipAddress": "string",
+          "subnetMask": "string"
+        }
+      ],
+      "http20Enabled": "boolean",
+      "minTlsVersion": "string"
+    },
+    "scmSiteAlsoStopped": "boolean",
+    "hostingEnvironmentProfile": {
+      "id": "string"
+    },
+    "clientAffinityEnabled": "boolean",
+    "clientCertEnabled": "boolean",
+    "hostNamesDisabled": "boolean",
+    "containerSize": "integer",
+    "dailyMemoryTimeQuota": "integer",
+    "cloningInfo": {
+      "correlationId": "string",
+      "overwrite": "boolean",
+      "cloneCustomHostNames": "boolean",
+      "cloneSourceControl": "boolean",
+      "sourceWebAppId": "string",
+      "hostingEnvironment": "string",
+      "appSettingsOverrides": {},
+      "configureLoadBalancing": "boolean",
+      "trafficManagerProfileId": "string",
+      "trafficManagerProfileName": "string",
+      "ignoreQuotas": "boolean"
+    },
+    "snapshotInfo": {
+      "kind": "string",
+      "properties": {
+        "snapshotTime": "string",
+        "recoveryTarget": {
+          "location": "string",
+          "id": "string"
+        },
+        "overwrite": "boolean",
+        "recoverConfiguration": "boolean",
+        "ignoreConflictingHostNames": "boolean"
+      }
+    },
+    "httpsOnly": "boolean"
+  },
+  "identity": {
+    "type": "SystemAssigned"
+  },
+  "resources": []
+}
