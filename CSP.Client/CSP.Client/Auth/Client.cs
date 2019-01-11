@@ -100,7 +100,7 @@ namespace CSP.Client.Auth
         public async Task<string> TestDeployment()
         {
 
-            var id = "8a6b62ad-01cb-4d60-88a8-87a6490371d5";
+            // var id = "8a6b62ad-01cb-4d60-88a8-87a6490371d5";
             var request = new HttpRequestMessage(HttpMethod.Get, $"v1/analytics/licenses/deployment")
             {
                 Headers = {
@@ -122,7 +122,7 @@ namespace CSP.Client.Auth
         public async Task<string> TestUsage()
         {
 
-            var id = "8a6b62ad-01cb-4d60-88a8-87a6490371d5";
+            // var id = "8a6b62ad-01cb-4d60-88a8-87a6490371d5";
             var request = new HttpRequestMessage(HttpMethod.Get, $"v1/analytics/licenses/usage")
             {
                 Headers = {
@@ -143,7 +143,7 @@ namespace CSP.Client.Auth
         public async Task<string> TestPartnerUsage()
         {
 
-            var id = "8a6b62ad-01cb-4d60-88a8-87a6490371d5";
+            // var id = "8a6b62ad-01cb-4d60-88a8-87a6490371d5";
             var request = new HttpRequestMessage(HttpMethod.Get, $"v1/analytics/licenses/usage")
             {
                 Headers = {
@@ -166,7 +166,7 @@ namespace CSP.Client.Auth
         public async Task<string> TestCommercialDeployment()
         {
 
-            var id = "8a6b62ad-01cb-4d60-88a8-87a6490371d5";
+            // var id = "8a6b62ad-01cb-4d60-88a8-87a6490371d5";
             var request = new HttpRequestMessage(HttpMethod.Get, $"v1/analytics/commercial/deployment/license")
             {
                 Headers = {
@@ -188,7 +188,7 @@ namespace CSP.Client.Auth
         public async Task<string> TestCommercialUsage()
         {
 
-            var id = "8a6b62ad-01cb-4d60-88a8-87a6490371d5";
+            // var id = "8a6b62ad-01cb-4d60-88a8-87a6490371d5";
             var request = new HttpRequestMessage(HttpMethod.Get, $"v1/analytics/commercial/usage/license")
             {
                 Headers = {
@@ -210,7 +210,7 @@ namespace CSP.Client.Auth
         public async Task<string> GetAllSearchAnalytics()
         {
 
-            var id = "8a6b62ad-01cb-4d60-88a8-87a6490371d5";
+            // var id = "8a6b62ad-01cb-4d60-88a8-87a6490371d5";
             var request = new HttpRequestMessage(HttpMethod.Get, $"partner/v1/analytics/search?top=100")
             {
                 Headers = {
