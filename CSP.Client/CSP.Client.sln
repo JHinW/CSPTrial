@@ -5,7 +5,7 @@ VisualStudioVersion = 15.0.28307.136
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSP.Client", "CSP.Client\CSP.Client.csproj", "{0B30091F-EB50-4C64-AAC6-343E2750BCCD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Azure.JobTrial", "Azure.JobTrial\Azure.JobTrial.csproj", "{5C013548-94AF-4998-ABE5-541B62425CF4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Azure.JobTrial", "Azure.JobTrial\Azure.JobTrial.csproj", "{5C013548-94AF-4998-ABE5-541B62425CF4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
