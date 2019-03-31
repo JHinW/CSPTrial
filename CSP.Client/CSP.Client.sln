@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSP.Client", "CSP.Client\CS
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Azure.JobTrial", "Azure.JobTrial\Azure.JobTrial.csproj", "{5C013548-94AF-4998-ABE5-541B62425CF4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Azure.Job", "Azure.Job\Azure.Job.csproj", "{3C145B39-2C4C-4970-A759-748D35DF95B6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{5C013548-94AF-4998-ABE5-541B62425CF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5C013548-94AF-4998-ABE5-541B62425CF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5C013548-94AF-4998-ABE5-541B62425CF4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C145B39-2C4C-4970-A759-748D35DF95B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C145B39-2C4C-4970-A759-748D35DF95B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C145B39-2C4C-4970-A759-748D35DF95B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C145B39-2C4C-4970-A759-748D35DF95B6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
