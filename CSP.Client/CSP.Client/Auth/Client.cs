@@ -100,11 +100,6 @@ namespace CSP.Client.Auth
         public async Task<string> TestDeployment()
         {
 
-<<<<<<< HEAD
-            // var id = "8a6b62ad-01cb-4d60-88a8-87a6490371d5";
-=======
-            var id = "8a6b62ad-01cb-4d60-88a8-87a6490371d5";
->>>>>>> origin/master
             var request = new HttpRequestMessage(HttpMethod.Get, $"v1/analytics/licenses/deployment")
             {
                 Headers = {
@@ -126,11 +121,6 @@ namespace CSP.Client.Auth
         public async Task<string> TestUsage()
         {
 
-<<<<<<< HEAD
-            // var id = "8a6b62ad-01cb-4d60-88a8-87a6490371d5";
-=======
-            var id = "8a6b62ad-01cb-4d60-88a8-87a6490371d5";
->>>>>>> origin/master
             var request = new HttpRequestMessage(HttpMethod.Get, $"v1/analytics/licenses/usage")
             {
                 Headers = {
@@ -150,12 +140,6 @@ namespace CSP.Client.Auth
 
         public async Task<string> TestPartnerUsage()
         {
-
-<<<<<<< HEAD
-            // var id = "8a6b62ad-01cb-4d60-88a8-87a6490371d5";
-=======
-            var id = "8a6b62ad-01cb-4d60-88a8-87a6490371d5";
->>>>>>> origin/master
             var request = new HttpRequestMessage(HttpMethod.Get, $"v1/analytics/licenses/usage")
             {
                 Headers = {
@@ -178,11 +162,6 @@ namespace CSP.Client.Auth
         public async Task<string> TestCommercialDeployment()
         {
 
-<<<<<<< HEAD
-            // var id = "8a6b62ad-01cb-4d60-88a8-87a6490371d5";
-=======
-            var id = "8a6b62ad-01cb-4d60-88a8-87a6490371d5";
->>>>>>> origin/master
             var request = new HttpRequestMessage(HttpMethod.Get, $"v1/analytics/commercial/deployment/license")
             {
                 Headers = {
@@ -203,12 +182,6 @@ namespace CSP.Client.Auth
 
         public async Task<string> TestCommercialUsage()
         {
-
-<<<<<<< HEAD
-            // var id = "8a6b62ad-01cb-4d60-88a8-87a6490371d5";
-=======
-            var id = "8a6b62ad-01cb-4d60-88a8-87a6490371d5";
->>>>>>> origin/master
             var request = new HttpRequestMessage(HttpMethod.Get, $"v1/analytics/commercial/usage/license")
             {
                 Headers = {
@@ -229,12 +202,6 @@ namespace CSP.Client.Auth
 
         public async Task<string> GetAllSearchAnalytics()
         {
-
-<<<<<<< HEAD
-            // var id = "8a6b62ad-01cb-4d60-88a8-87a6490371d5";
-=======
-            var id = "8a6b62ad-01cb-4d60-88a8-87a6490371d5";
->>>>>>> origin/master
             var request = new HttpRequestMessage(HttpMethod.Get, $"partner/v1/analytics/search?top=100")
             {
                 Headers = {

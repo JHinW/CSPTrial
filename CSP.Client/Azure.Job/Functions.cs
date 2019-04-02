@@ -19,5 +19,13 @@
 
             logger.LogInformation($"Processed work item {workItem.ID}");
         }
+
+        public async Task StartupJob([TimerTrigger("0 30 6 * * *", RunOnStartup = true)] TimerInfo timerInfo, ILogger logger)
+        {
+
+            logger.LogInformation("Timer job fired!");
+            await Task.Delay(0);
+            logger.LogInformation("Timer job completed!");
+        }
     }
 }
