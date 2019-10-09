@@ -44,9 +44,97 @@ namespace EA.Global
             return json;
         }
 
+
+        public async Task<string> BalanceSummary(string enrollNo)
+        {
+            var suffix = $"v3/enrollments/{enrollNo}/balancesummary";
+            var request = new HttpRequestMessage(HttpMethod.Get, suffix)
+            {
+                Headers = {
+                  //  { HttpRequestHeader.Accept.ToString(), "application/json" },
+                    //{ "MS-RequestId", Guid.NewGuid().ToString() },
+                    //{ "MS-CorrelationId", Guid.NewGuid().ToString() },
+                    //{ "MS-Contract-Version", "v1" },
+                }
+            };
+            var response = await _api.SendAsync(request);
+            var json = await response.Content.ReadAsStringAsync();
+            return json;
+        }
+
         public async Task<string> RReservedInstances(string enrollNo, string start, string end)
         {
             var suffix = $"v2/enrollments/{enrollNo}/reservationdetails?startDate={start}&endDate={end}";
+            var request = new HttpRequestMessage(HttpMethod.Get, suffix)
+            {
+                Headers = {
+                  //  { HttpRequestHeader.Accept.ToString(), "application/json" },
+                    //{ "MS-RequestId", Guid.NewGuid().ToString() },
+                    //{ "MS-CorrelationId", Guid.NewGuid().ToString() },
+                    //{ "MS-Contract-Version", "v1" },
+                }
+            };
+            var response = await _api.SendAsync(request);
+            var json = await response.Content.ReadAsStringAsync();
+            return json;
+        }
+
+
+        public async Task<string> RReservedInstancesCharges(string enrollNo, string start, string end)
+        {
+            var suffix = $"v2/enrollments/{enrollNo}/reservationcharges?startDate={start}&endDate={end}";
+            var request = new HttpRequestMessage(HttpMethod.Get, suffix)
+            {
+                Headers = {
+                  //  { HttpRequestHeader.Accept.ToString(), "application/json" },
+                    //{ "MS-RequestId", Guid.NewGuid().ToString() },
+                    //{ "MS-CorrelationId", Guid.NewGuid().ToString() },
+                    //{ "MS-Contract-Version", "v1" },
+                }
+            };
+            var response = await _api.SendAsync(request);
+            var json = await response.Content.ReadAsStringAsync();
+            return json;
+        }
+
+        public async Task<string> RReservedInstancesRecommendations(string enrollNo, int lookBackPeriod)
+        {
+            var suffix = $"v2/enrollments/{enrollNo}/SharedReservationRecommendations?lookBackPeriod={lookBackPeriod}";
+            var request = new HttpRequestMessage(HttpMethod.Get, suffix)
+            {
+                Headers = {
+                  //  { HttpRequestHeader.Accept.ToString(), "application/json" },
+                    //{ "MS-RequestId", Guid.NewGuid().ToString() },
+                    //{ "MS-CorrelationId", Guid.NewGuid().ToString() },
+                    //{ "MS-Contract-Version", "v1" },
+                }
+            };
+            var response = await _api.SendAsync(request);
+            var json = await response.Content.ReadAsStringAsync();
+            return json;
+        }
+
+
+        public async Task<string> EAPrice(string enrollNo)
+        {
+            var suffix = $"v3/enrollments/{enrollNo}/pricesheet";
+            var request = new HttpRequestMessage(HttpMethod.Get, suffix)
+            {
+                Headers = {
+                  //  { HttpRequestHeader.Accept.ToString(), "application/json" },
+                    //{ "MS-RequestId", Guid.NewGuid().ToString() },
+                    //{ "MS-CorrelationId", Guid.NewGuid().ToString() },
+                    //{ "MS-Contract-Version", "v1" },
+                }
+            };
+            var response = await _api.SendAsync(request);
+            var json = await response.Content.ReadAsStringAsync();
+            return json;
+        }
+
+        public async Task<string> EAPriceBillingPeriod(string enrollNo, string billingPeriod)
+        {
+            var suffix = $"v3/enrollments/{enrollNo}/billingPeriods/{billingPeriod}/pricesheet";
             var request = new HttpRequestMessage(HttpMethod.Get, suffix)
             {
                 Headers = {
